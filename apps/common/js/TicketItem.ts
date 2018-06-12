@@ -1,7 +1,7 @@
-import {Supertype, supertypeClass, property, remote, Remoteable, Persistable} from 'amorphic';
-import {Person} from './person';
-import {Ticket} from './ticket';
-import {TicketItemComment} from './ticketItemComment';
+import {Supertype, supertypeClass, property, Remoteable, Persistable} from 'amorphic';
+import {Person} from './Person';
+import {Ticket} from './Ticket';
+import {TicketItemComment} from './TicketItemComment';
 //import {Created, Constructable} from './created';
 console.log("Compiling TicketItem");
 
@@ -10,13 +10,13 @@ export class TicketItem extends Remoteable(Persistable(Supertype)) {
 
     // Secure properties can only be set on the server
     @property({getType: ()=>{return Person}})
-    creator:            Person; 		//{toServer: false, type: Person, fetch: true},
+    creator: Person; 		//{toServer: false, type: Person, fetch: true},
 
     @property()
-    created:            Date;			//{toServer: false, type: Date},
+    created: Date;			//{toServer: false, type: Date},
 
     @property({getType: ()=>{return Ticket}})
-    ticket:             Ticket;			//{toServer: false, type: Ticket},
+    ticket: Ticket;			//{toServer: false, type: Ticket},
 
     // Only called on the server
     constructor (ticket: Ticket, creator? : Person) {

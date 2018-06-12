@@ -1,12 +1,12 @@
 import {Supertype, supertypeClass, property, remote, Remoteable, Persistable} from 'amorphic';
-import {Person} from './person';
-import {Project} from './project';
-import {TicketItemComment} from './ticketItemComment';
-import {TicketItem} from './ticketItem';
+import {Person} from './Person';
+import {Project} from './Project';
+import {TicketItemComment} from './TicketItemComment';
+import {TicketItem} from './TicketItem';
 //import {Created, Constructable} from './created'
 console.log("Compiling Ticket");
 @supertypeClass
-export class Ticket  extends Remoteable(Persistable(Supertype)){
+export class Ticket extends Remoteable(Persistable(Supertype)){
 
     @property()
     created:            Date;

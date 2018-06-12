@@ -1,5 +1,5 @@
 import {Supertype, supertypeClass, property, remote, Remoteable, Persistable} from 'amorphic';
-import {TicketItem} from './ticketItem';
+import {TicketItem} from './TicketItem';
 console.log("Compiling TicketItemAttachment");
 
 @supertypeClass

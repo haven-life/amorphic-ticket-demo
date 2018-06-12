@@ -6,12 +6,8 @@
 // PersistObjectTemplate.debugInfo = 'conflict;data';//'api;io';
 // PersistObjectTemplate.logger.setLevel('debug');
 
-
-import Promise = require('bluebird');
-import { expect } from 'chai';
-import * as mocha from 'mocha';
-import * as _ from 'underscore';
-import {Ticket} from "../../../common/js/ticket";
+import {expect} from 'chai';
+import {Ticket} from '../../../common/js/Ticket';
 
 describe('Ticket', function() {
 

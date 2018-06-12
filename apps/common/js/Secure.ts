@@ -1,9 +1,7 @@
 import {Supertype, supertypeClass, property, Remoteable, Persistable} from 'amorphic';
-import {TicketItem} from './ticketItem';
 console.log("Compiling Person");
-import {AuthenticatedPrincipal} from './AuthenticatedPrincipal';
 //import {Created} from "./created";
-import {Person} from './person';
+import {Person} from './Person';
 
 @supertypeClass({toClient: false})
 export class Secure extends Remoteable(Persistable(Supertype)) {

@@ -1,6 +1,6 @@
-import {Supertype, supertypeClass, property, Remoteable, Persistable} from 'amorphic';
-import {TicketItem} from './ticketItem';
-console.log("Compiling Person");
+import {supertypeClass, property,} from 'amorphic';
+import {TicketItem} from './TicketItem';
+console.log('Compiling Person');
 import {AuthenticatedPrincipal} from './AuthenticatedPrincipal';
 
 @supertypeClass

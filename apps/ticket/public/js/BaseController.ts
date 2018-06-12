@@ -1,6 +1,6 @@
 import {supertypeClass} from 'amorphic';
 import {AuthenticatingController} from '../../../common/js/AuthenticatingController';
-import {Person} from '../../../common/js/person';
+import {Person} from '../../../common/js/Person';
 declare var ActiveXObject : any;
 @supertypeClass
 export abstract class BaseController extends AuthenticatingController {

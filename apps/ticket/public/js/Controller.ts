@@ -1,15 +1,12 @@
-import {Supertype, supertypeClass, property, remote, amorphicStatic} from 'amorphic';
-//import {AuthenticatingController, AuthenticatedPrincipal} from "amorphic-userman";
+import {supertypeClass, property, remote, amorphicStatic} from 'amorphic';
 import {AuthenticatedPrincipal} from '../../../common/js/AuthenticatedPrincipal';
-import {AuthenticatingController} from "../../../common/js/AuthenticatingController";
-import {BaseController} from './baseController';
-import { TicketItemComment } from '../../../common/js/ticketItemComment';
-import {Ticket} from '../../../common/js/ticket';
-import * as Q from 'q';
+import {BaseController} from './BaseController';
+import {TicketItemComment} from '../../../common/js/TicketItemComment';
+import {Ticket} from '../../../common/js/Ticket';
 import * as _ from 'underscore';
-import {Person} from "../../../common/js/person";
-import {Project} from "../../../common/js/project";
-import {Secure} from "../../../common/js/secure";
+import {Person} from "../../../common/js/Person";
+import {Project} from "../../../common/js/Project";
+import {Secure} from "../../../common/js/Secure";
 
 var forceImport = TicketItemComment;
 
@@ -44,7 +41,7 @@ export class Controller extends BaseController {
     newPrincipal () : AuthenticatedPrincipal {
         return new Person("","","","");
     }
-    
+
     @property({getType: () => Secure})
     secure: Secure;
 

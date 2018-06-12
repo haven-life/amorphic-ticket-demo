@@ -1,10 +1,6 @@
-import {Supertype, supertypeClass, Persistable, property, remote, amorphicStatic, Bindable} from 'amorphic';
-import { TicketItemComment } from '../../common/js/ticketItemComment';
-import {Ticket} from '../../common/js/ticket';
-import * as Q from 'q';
-import * as _ from 'underscore';
-import {Person} from "../../common/js/person";
-import {Project} from "../../common/js/project";
+import {Supertype, supertypeClass, Persistable, amorphicStatic} from 'amorphic';
+import {TicketItemComment} from '../../common/js/TicketItemComment';
+import {Ticket} from '../../common/js/Ticket';
 
 var forceImport = TicketItemComment;
 
@@ -16,7 +12,7 @@ export class Controller extends Persistable(Supertype) {
             userConfigFromStatic: amorphicStatic.config.userConfig
             },
             'Daemon Up and Running ');
-            
+
         setTimeout(() => this.tickTock(), 5000);
 
     }

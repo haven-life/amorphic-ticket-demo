@@ -1,6 +1,6 @@
 import {Supertype, supertypeClass, property, Remoteable, Persistable} from 'amorphic';
-import {Person} from './person';
-import {Ticket} from './ticket';
+import {Person} from './Person';
+import {Ticket} from './Ticket';
 console.log("Compiling Project");
 @supertypeClass
 export class Project extends Remoteable(Persistable(Supertype)) {
