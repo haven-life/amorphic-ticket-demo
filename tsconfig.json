@@ -1,7 +1,6 @@
 {
     "include": [
-        "./apps/**/*",
-        "./node_modules/amorphic-userman"
+        "./apps/**/*"
     ],
     "compilerOptions": {
         "module": "commonjs",

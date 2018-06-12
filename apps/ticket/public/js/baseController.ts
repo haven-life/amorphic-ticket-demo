@@ -1,7 +1,6 @@
-import {Supertype, supertypeClass, property, remote} from 'amorphic';
-//import {AuthenticatingController, AuthenticatedPrincipal} from "amorphic-userman";
+import {supertypeClass} from 'amorphic';
 import {AuthenticatingController} from '../../../common/js/AuthenticatingController';
-import {Person} from "../../../common/js/person";
+import {Person} from '../../../common/js/person';
 declare var ActiveXObject : any;
 @supertypeClass
 export abstract class BaseController extends AuthenticatingController {
@@ -60,17 +59,17 @@ export abstract class BaseController extends AuthenticatingController {
 			throw {message: "max", max: max + "%"}
 	};
 	isMinLength (len) {
-		if (this.isEmpty() || this.value.length < len) 
+		if (this.isEmpty() || this.value.length < len)
 			throw {message: "minlength", minlength: len}
 	};
 	isMaxlength (len) {
-		if (this.isEmpty || this.value.length > len) 
+		if (this.isEmpty || this.value.length > len)
 			throw {message: "maxlength", maxlength: len}
 	};
 	isEmpty (value?) {
 		return this.value == null || this.value.length == 0
 	};
-	
+
 	// Parsers
 	parseCurrency () {
 		if (!this.value) return 0;
@@ -124,7 +123,7 @@ export abstract class BaseController extends AuthenticatingController {
 		var result = f;
 		return result;
 	};
-	
+
 	// Formatters
 	formatText () {
 		if (this.value == null || typeof(this.value) == 'undefined') return "";

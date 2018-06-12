@@ -11,23 +11,23 @@ var ticketRoutes = {
                 default: {path: '', file: null},
                 home: {file: null},
 
-                login: {file: "modules/amorphic-userman/pages/login.html"},
-                registration: {file: "modules/amorphic-userman/pages/registration.html"},
-                registration_instructions: {file: "modules/amorphic-userman/pages/registration_instructions.html"},
-                registration_confirmation: {file: "modules/amorphic-userman/pages/registration_confirmation.html"},
+                login: {file: "login.html"},
+                registration: {file: "registration.html"},
+                registration_instructions: {file: "registration_instructions.html"},
+                registration_confirmation: {file: "registration_confirmation.html"},
 
-                change_email: {file: "modules/amorphic-userman/pages/change_email.html"},
-                change_email_confirmation: {file: "modules/amorphic-userman/pages/change_email_confirmation.html"},
-                change_password: {file: "modules/amorphic-userman/pages/change_password.html"},
-                change_password_confirmation: {file: "modules/amorphic-userman/pages/change_password_confirmation.html"},
+                change_email: {file: "change_email.html"},
+                change_email_confirmation: {file: "change_email_confirmation.html"},
+                change_password: {file: "change_password.html"},
+                change_password_confirmation: {file: "change_password_confirmation.html"},
 
-                reset_password_request: {file: "modules/amorphic-userman/pages/reset_password_request.html"},
-                reset_password_instructions: {file: "modules/amorphic-userman/pages/reset_password_instructions.html"},
-                reset_password: {file: "modules/amorphic-userman/pages/reset_password.html"},
-                reset_password_confirmation: {file: "modules/amorphic-userman/pages/reset_password_confirmation.html"},
+                reset_password_request: {file: "reset_password_request.html"},
+                reset_password_instructions: {file: "reset_password_instructions.html"},
+                reset_password: {file: "reset_password.html"},
+                reset_password_confirmation: {file: "reset_password_confirmation.html"},
 
                 reset_password_from_code: {
-                    file: "modules/amorphic-userman/pages/reset_password.html",
+                    file: "reset_password.html",
                     parameters: {
                         email: {bind: "email"},
                         token: {bind: "passwordChangeHash"}

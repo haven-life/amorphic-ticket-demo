@@ -36,4 +36,4 @@ services:
     environment:
       - application=batch
     command: ./wait-for-it.sh database:5432 -- node app.js
-    
+
