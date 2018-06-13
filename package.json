@@ -5,8 +5,9 @@
     "node": "6.11.x"
   },
   "scripts": {
-    "start": "app.js",
-    "compile:ts": "tsc",
+    "start": "node app.js",
+    "clean": "rm -rf ./dist-server",
+    "compile:ts": "tsc && ts-node copyStaticAssets.ts",
     "build:app": "gulp webpack"
   },
   "dependencies": {
@@ -21,12 +22,15 @@
     "@types/mocha": "^5.2.2",
     "@types/node": "^10.3.2",
     "@types/q": "*",
+    "@types/shelljs": "^0.8.0",
     "@types/underscore": "*",
     "chai": "^4.1.2",
     "gulp": "^3.9.1",
     "mocha": "^5.2.0",
-    "typescript": "2.8.4",
+    "shelljs": "^0.8.2",
     "ts-loader": "^2.0.0",
+    "ts-node": "^6.1.1",
+    "typescript": "2.8.4",
     "webpack": "^2.2.1",
     "webpack-node-externals": "^1.5.4",
     "webpack-stream": "^3.2.0"
