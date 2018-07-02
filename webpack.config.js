@@ -1,5 +1,4 @@
 var path = require('path');
-var nodeExternals = require('webpack-node-externals');
 module.exports = {
     entry: './apps/ticket/public/js/index.ts',
     output: {

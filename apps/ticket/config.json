@@ -1,12 +1,6 @@
 {
     "createControllerFor": "yes",
-	"ver":          "0",
-	"userman":  {
-		"require": "amorphic-userman",
-		"controller": {"require": "controller", "template": "Controller", "fields":{"principal": "loggedInPerson"}},
-		"principal": {"require" : "person", "template": "Person"},
-		"validateEmail": true
-	},
+	"ver": "0",
 	"authentication": {
 		"validateEmail": false,
 		"defaultEmail": "admin@havenlife.com",

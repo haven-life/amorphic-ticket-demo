@@ -6,6 +6,9 @@
     "sessionSeconds" : 3600,
     "objectCacheSeconds" : 600,
     "sessionSecret" : "Ey0veeljPcLsHitdxCG2",
-	"applications" : {"ticket": "apps/ticket", "batch": "apps/batch"},
+	"applications" : {
+        "ticket": "dist-server/apps/ticket",
+        "batch": "dist-server/apps/batch"
+    },
 	"application"  : "ticket"
 }
